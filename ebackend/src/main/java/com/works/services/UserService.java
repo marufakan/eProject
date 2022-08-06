@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.Optional;
 
 @Service
 public class UserService {
@@ -18,20 +17,11 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-
     public ResponseEntity save(User user) {
-        Optional<User> oExp=userRepository.findByProvinceEqualsIgnoreCaseAndDistrictEqualsIgnoreCase(user.getProvince(), user.getDistrict());
         Map<String, Object> hm = new LinkedHashMap<>();
-        if(!oExp.isPresent()){
-            hm.put("status", true);
-            hm.put("result", userRepository.save(user) );
-            return new ResponseEntity<>(hm, HttpStatus.OK);
-        }
-        else{
-            hm.put("status", false);
-            return new ResponseEntity<>(hm, HttpStatus.NOT_ACCEPTABLE);
-        }
-
+        hm.put("status", true);
+        hm.put("result", userRepository.save(user) );
+        return new ResponseEntity<>(hm, HttpStatus.OK);
     }
 
     public ResponseEntity list() {
