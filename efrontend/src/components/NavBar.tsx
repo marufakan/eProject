@@ -1,7 +1,5 @@
 import React from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
-import "./index.css"
-
 function navbar() {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const navigate = useNavigate()
