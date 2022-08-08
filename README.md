@@ -12,12 +12,12 @@
  
  | Main Page |
 | ------------ |
-|<img src="https://github.com/marufakan/eProject/tree/main/img/main.png" >|
+|<img src="https://github.com/marufakan/eProject/blob/main/img/main.png" >|
 
 |  Detail Page |
 | ------------ |
-|<img src="https://github.com/marufakan/eProject/tree/main/img/list.png" >|
+|<img src="https://github.com/marufakan/eProject/blob/main/img/list.png" >|
 
 |  Register Page |
 | ------------ |
-|<img src="https://github.com/marufakan/eProject/tree/main/img/register.png" >|
+|<img src="https://github.com/marufakan/eProject/blob/main/img/register.png" >|
